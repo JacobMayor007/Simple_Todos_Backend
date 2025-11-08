@@ -85,7 +85,7 @@ func UpdateTodos(c *fiber.Ctx) error {
 	}
 
 	if !found {
-		return fiber.ErrNotFound // 404 if todo not found
+		return fiber.ErrNotFound
 	}
 	method := c.Method()
 	log.Printf("%s", method)
